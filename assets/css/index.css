@@ -29,30 +29,30 @@ body {
   transition: 0.3s ease-in-out;
 }
 
-.cabecalho .titulo:hover {
+.logo.titulo:hover {
   color: #1ed760;
 }
 
-.cabecalho .navegacao .menu{
-    display: flex;
+.cabecalho .navegacao .menu {
+  display: flex;
 }
 
-.cabecalho .navegacao .menu .item{
-    margin: 10px;
+.cabecalho .navegacao .menu .item {
+  margin: 10px;
 }
 
-.cabecalho .navegacao .menu .item a{
-    padding: 15px;
-    transition: 0.3s ease-in-out; 
+.cabecalho .navegacao .menu .item a {
+  padding: 15px;
+  transition: 0.3s ease-in-out;
 }
 
-.cabecalho .navegacao .menu .item a:hover{
-    background-color: #1ed760;
-    border-radius: 7px;
-    color: #ffffff;
+.cabecalho .navegacao .menu .item a:hover {
+  background-color: #1ed760;
+  border-radius: 7px;
+  color: #ffffff;
 }
 
-.conteudo-principal .paineis{
+.conteudo-principal .paineis {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,7 +60,7 @@ body {
   position: relative;
 }
 
-.conteudo-principal .paineis .imagem-painel{
+.conteudo-principal .paineis .imagem-painel {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -69,27 +69,33 @@ body {
   position: absolute;
   z-index: -1;
   filter: brightness(70%);
+  opacity: 0;
+  transition: .3s ease-in-out;
 }
 
-.conteudo-principal .paineis .projeto1{
-  background-image: url(../image/painel1.jpg  );
+.conteudo-principal .paineis .projeto1 {
+  background-image: url(../image/painel1.jpg);
 }
 
-.conteudo-principal .paineis .projeto2{
-  background-image: url(../image/painel2.jpg  );
+.conteudo-principal .paineis .projeto2 {
+  background-image: url(../image/painel2.jpg);
 }
 
-.conteudo-principal .paineis .projeto3{
-  background-image: url(../image/painel3.jpg  );
+.conteudo-principal .paineis .projeto3 {
+  background-image: url(../image/painel3.jpg);
 }
 
-.conteudo-principal .paineis .titulo{
+.conteudo-principal .paineis .imagem-painel.mostrar {
+  opacity: 1;
+}
+
+.conteudo-principal .paineis .titulo {
   color: #ffffff;
   text-transform: uppercase;
   font-size: calc(1em + 1vw);
 }
 
-.conteudo-principal .paineis .seta{
+.conteudo-principal .paineis .seta {
   background: url(../image/seta.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -101,51 +107,51 @@ body {
   overflow: hidden;
 }
 
-.conteudo-principal .paineis .seta.btn-voltar{
+.conteudo-principal .paineis .seta.btn-voltar {
   left: 20px;
   transform: rotateY(180deg);
 }
 
-.conteudo-principal .paineis .seta.btn-avancar{
+.conteudo-principal .paineis .seta.btn-avancar {
   right: 20px;
 }
 
-.quem-somos{
-  background-color: #2941AB;
+.quem-somos {
+  background-color: #2941ab;
 }
 
-.quem-somos .conteudo{
+.quem-somos .conteudo {
   display: flex;
   align-items: center;
   padding: 0 10%;
 }
 
-.quem-somos .conteudo .imagem{
+.quem-somos .conteudo .imagem {
   width: 60%;
 }
 
-.quem-somos .conteudo .informacoes{
+.quem-somos .conteudo .informacoes {
   width: 40%;
 }
 
-.quem-somos .conteudo .informacoes .titulo{
+.quem-somos .conteudo .informacoes .titulo {
   font-size: 50px;
   color: #1ed760;
   margin-bottom: 20px;
 }
 
-.quem-somos .conteudo .informacoes .texto{
+.quem-somos .conteudo .informacoes .texto {
   font-size: 20px;
   line-height: 1.5;
   color: #ffffff;
   font-weight: 400;
 }
 
-.rodape{
+.rodape {
   padding: 80px 0 20px 0;
 }
 
-.rodape .navegacao{
+.rodape .navegacao {
   max-width: 1170px;
   margin: 0 auto;
   display: flex;
@@ -154,29 +160,32 @@ body {
   flex-wrap: wrap;
 }
 
-.rodape .redes-sociais{
+.rodape .redes-sociais {
   display: flex;
 }
 
-.rodape .redes-sociais a{
+.rodape .redes-sociais a {
   display: flex;
   justify-content: center;
   margin: 0 10px;
-  font-size: 30px;
   border: 2px solid #111;
-  border-radius: 50%;
   padding: 15px;
   width: 65px;
-  transition: .3s ease-in-out;
+  border-radius: 50%;
+  transition: 0.3s ease-in-out;
+  font-size: 30px;
 }
 
-.rodape .redes-sociais a:hover{
+.rodape .redes-sociais a:hover {
   background-color: #1ed760;
-  color: #ffffff;
 }
 
-.rodape .navegacao .logo .imagem{
-  width: 50px;
+.rodape .copyright {
+  margin-top: 70px;
+  text-align: center;
 }
 
-.rodape .copyright
+.rodape .copyright {
+  margin-top: 70px;
+  text-align: center;
+}
